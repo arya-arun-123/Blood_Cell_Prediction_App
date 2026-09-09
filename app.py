@@ -281,7 +281,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 IMG_SIZE = (224, 224)
 
 BASE_DIR = Path(__file__).resolve().parent
-ARTIFACTS_DIR = BASE_DIR.parent / "artifacts"
+ARTIFACTS_DIR = BASE_DIR / "artifacts"
 MODEL_PATH = ARTIFACTS_DIR / "vgg16_pcb.keras"
 CLASS_NAMES_PATH = ARTIFACTS_DIR / "class_names.json"
 
@@ -759,7 +759,5 @@ st.markdown("---")
 st.html("""
     <div style="text-align: center; color: #64748b; font-size: 0.82rem; padding: 10px 0;">
         🩸 <strong>HEMA-AI Peripheral Blood Cell Classifier</strong>
-        | Powered by Streamlit & TensorFlow
-        | Black & Red Edition
     </div>
 """)
